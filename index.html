@@ -1,101 +1,574 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO 및 소유권 확인 태그 (추후 수정 필요) -->
-    <meta name="description" content="성원산업 - 고품질 재생 플라스틱 LDPE, PP 펠릿 제조 전문 기업. 2001년부터 축적된 압출 공정 노하우.">
-    <meta property="og:title" content="성원산업 | 재생 플라스틱 제조">
-    <meta property="og:description" content="고품질 LDPE, PP 펠릿 제조 전문. 지속가능한 환경을 위한 플라스틱 리사이클링.">
-    <!-- <meta name="naver-site-verification" content="네이버에서 발급받은 코드 삽입"> -->
-    <!-- <meta name="google-site-verification" content="구글에서 발급받은 코드 삽입"> -->
-    
-    <title>성원산업 | 재생 플라스틱 펠릿 제조 전문</title>
-    
-    <style>
-        /* 기본 스타일 설정 (CSS) */
-        body, h1, h2, h3, p, ul, li { margin: 0; padding: 0; font-family: 'Malgun Gothic', sans-serif; }
-        body { color: #333; line-height: 1.6; }
-        a { text-decoration: none; color: inherit; }
-        
-        /* 레이아웃 및 섹션 */
-        header { background-color: #fff; padding: 20px 5%; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { font-size: 24px; font-weight: bold; color: #0056b3; }
-        nav a { margin-left: 20px; font-weight: bold; }
-        
-        section { padding: 80px 5%; max-width: 1200px; margin: 0 auto; }
-        h2 { font-size: 32px; margin-bottom: 20px; text-align: center; color: #0056b3; }
-        
-        /* 메인 배너 (Hero) */
-        .hero { background-color: #f4f7f6; text-align: center; padding: 120px 5%; }
-        .hero h1 { font-size: 40px; margin-bottom: 20px; }
-        .hero p { font-size: 18px; color: #666; }
-        
-        /* 제품 소개 (Grid) */
-        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
-        .product-card { border: 1px solid #eee; padding: 20px; border-radius: 8px; text-align: center; background: #fff; }
-        
-        /* 연락처 */
-        .contact { background-color: #333; color: #fff; text-align: center; padding: 60px 5%; }
-        .contact p { margin: 10px 0; font-size: 16px; }
-        
-        /* 반응형 모바일 조정 */
-        @media (max-width: 768px) {
-            header { flex-direction: column; }
-            nav { margin-top: 15px; }
-            nav a { margin: 0 10px; }
-            .hero h1 { font-size: 28px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="성원산업 - 25년 압출 노하우의 재생 LDPE 펠릿 제조. 프리미엄급(SW-PRO)·일반형(SW-ECO) 펠릿 제작 및 LDPE 스크랩 상시 매입, 열분해 피드스톡 공급.">
+<meta name="keywords" content="재생LDPE,재생PE펠릿,LDPE스크랩매입,재생플라스틱펠릿,열분해원료,화성재생플라스틱">
+<link rel="canonical" href="https://sungwonind.co.kr/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="성원산업 | 25년의 신뢰, 재생 플라스틱 펠릿 제조">
+<meta property="og:description" content="이중 압출·필터링 공정으로 만든 재생 LDPE 펠릿. 농업용 호스·필름부터 사출성형·건축자재까지.">
+<meta property="og:url" content="https://sungwonind.co.kr/">
+<meta property="og:locale" content="ko_KR">
+
+<title>성원산업 | 재생 LDPE 펠릿 제조 · 스크랩 매입 · 열분해 원료 공급</title>
+
+<!-- ===================================================================
+     SEO용 구조화 데이터(JSON-LD)
+     - 검색엔진이 회사 정보/상품을 정확히 이해하도록 돕는 코드입니다.
+     - 주소, 전화번호가 바뀌면 이 블록의 값도 함께 수정하세요.
+=================================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "성원산업",
+  "url": "https://sungwonind.co.kr/",
+  "telephone": "+82-10-2212-5129",
+  "email": "sungwon4644@hanmail.net",
+  "foundingDate": "2001",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "은행나무로 170번길 60",
+    "addressLocality": "화성시 양감면",
+    "addressRegion": "경기도",
+    "addressCountry": "KR"
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "SW-PRO 프리미엄급 재생 LDPE 펠릿",
+        "description": "120목 4장 필터링, 본드·테이프 제거 원단 기반 고순도 재생 LDPE 펠릿. 농업용 호스, 하우스 필름, 스트레치랩 등에 사용."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "SW-ECO 일반형 재생 LDPE 펠릿",
+        "description": "80목 2장 필터링 재생 LDPE 펠릿. 사출성형품, 건축용 보양비닐, 파렛트 등에 사용."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+/* ===================================================================
+   0. 디자인 토큰 (색상/폰트) — 여기 값만 바꾸면 전체 톤이 바뀝니다.
+=================================================================== */
+:root{
+    --ink:        #1D2420;   /* 기본 텍스트/짙은 배경 */
+    --ink-soft:   #384038;   /* 보조 짙은색 */
+    --paper:      #ECEAE3;   /* 은은한 배경 (크림 아님, 그레이시 톤) */
+    --paper-dim:  #DFDDD4;
+    --white:      #FFFFFF;
+    --steel:      #767F7A;   /* 보조 텍스트/테두리 */
+    --steel-line: #D8D6CD;
+    --amber:      #C1622A;   /* 시그니처 포인트 컬러 (용융 수지) */
+    --amber-dark: #A2501F;
+    --green:      #46664A;   /* 재활용/친환경 보조 컬러 (태그 등) */
+    --green-bg:   #E7EEE6;
+
+    --font-display: 'Pretendard', 'Malgun Gothic', sans-serif;
+    --font-body:    'Pretendard', 'Malgun Gothic', sans-serif;
+    --font-mono:    'JetBrains Mono', 'Roboto Mono', 'Consolas', monospace;
+}
+
+@font-face{
+    font-family:'Pretendard';
+    src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Regular.woff2') format('woff2');
+    font-weight:400; font-display:swap;
+}
+@font-face{
+    font-family:'Pretendard';
+    src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight:600; font-display:swap;
+}
+@font-face{
+    font-family:'Pretendard';
+    src:url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight:800; font-display:swap;
+}
+
+*{ box-sizing:border-box; }
+body,h1,h2,h3,h4,p,ul,li,table,th,td{ margin:0; padding:0; }
+body{
+    font-family:var(--font-body);
+    color:var(--ink);
+    line-height:1.65;
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+}
+a{ text-decoration:none; color:inherit; }
+img{ max-width:100%; display:block; }
+section{ padding:96px 6%; max-width:1120px; margin:0 auto; }
+.eyebrow{
+    font-family:var(--font-mono);
+    font-size:13px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--amber-dark);
+    margin-bottom:14px;
+    display:block;
+}
+h2{ font-size:30px; font-weight:800; color:var(--ink); word-break:keep-all; letter-spacing:-.01em; }
+.section-head{ margin-bottom:48px; }
+.section-head p{ color:var(--steel); font-size:16px; margin-top:10px; max-width:640px; word-break:keep-all; }
+
+/* ===================================================================
+   1. 헤더
+=================================================================== */
+header{
+    background:var(--paper);
+    padding:18px 6%;
+    display:flex; justify-content:space-between; align-items:center;
+    position:sticky; top:0; z-index:1000;
+    border-bottom:1px solid var(--steel-line);
+    backdrop-filter:blur(6px);
+}
+.logo{ font-family:var(--font-display); font-size:20px; font-weight:800; letter-spacing:-.02em; color:var(--ink); }
+.logo span{ color:var(--amber); }
+nav{ display:flex; align-items:center; gap:28px; }
+nav a{ font-size:14px; font-weight:600; color:var(--ink-soft); }
+nav a:hover{ color:var(--amber-dark); }
+.nav-cta{
+    background:var(--ink); color:var(--white) !important;
+    padding:9px 18px; border-radius:4px; font-size:13px !important;
+}
+.nav-menu-btn{ display:none; background:none; border:none; font-size:22px; cursor:pointer; color:var(--ink); }
+
+/* ===================================================================
+   2. 히어로
+=================================================================== */
+.hero{
+    padding:120px 6% 90px;
+    background:var(--ink);
+    color:var(--paper);
+    position:relative;
+    overflow:hidden;
+}
+.hero::after{
+    content:"";
+    position:absolute; right:-10%; top:-30%;
+    width:520px; height:520px; border-radius:50%;
+    background:radial-gradient(circle, rgba(193,98,42,.35), transparent 70%);
+    pointer-events:none;
+}
+.hero-inner{ max-width:1120px; margin:0 auto; position:relative; }
+.hero .eyebrow{ color:var(--amber); }
+.hero h1{
+    font-family:var(--font-display);
+    font-size:44px; font-weight:800; line-height:1.28;
+    color:var(--white); word-break:keep-all; max-width:680px; letter-spacing:-.02em;
+}
+.hero p.lead{ font-size:17px; color:#C7CBC3; margin-top:20px; max-width:560px; word-break:keep-all; }
+.hero-ctas{ display:flex; gap:12px; margin-top:36px; flex-wrap:wrap; }
+.btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 24px; border-radius:4px; font-weight:700; font-size:15px;
+    transition:transform .15s ease, background .15s ease;
+}
+.btn:hover{ transform:translateY(-1px); }
+.btn-primary{ background:var(--amber); color:var(--white); }
+.btn-primary:hover{ background:var(--amber-dark); }
+.btn-outline{ border:1px solid #4A524B; color:var(--paper); }
+.btn-outline:hover{ border-color:var(--amber); }
+
+.trust-strip{
+    display:flex; gap:36px; flex-wrap:wrap; margin-top:56px;
+    padding-top:28px; border-top:1px solid #3A413B;
+}
+.trust-item{ font-size:13px; color:#B7BBB2; }
+.trust-item b{ display:block; font-family:var(--font-mono); font-size:22px; color:var(--white); font-weight:600; }
+
+/* ===================================================================
+   3. 회사소개
+=================================================================== */
+#about .about-text{ font-size:17px; color:var(--ink-soft); max-width:760px; word-break:keep-all; line-height:1.9; }
+.location-badge{
+    display:inline-flex; align-items:center; gap:6px;
+    background:var(--white); border:1px solid var(--steel-line); color:var(--ink-soft);
+    padding:8px 16px; border-radius:20px; font-size:14px; font-weight:600; margin-top:22px;
+}
+
+/* ===================================================================
+   4. 공정 다이어그램 (시그니처 요소)
+=================================================================== */
+.process{ background:var(--white); }
+.process-flow{
+    display:grid; grid-template-columns:repeat(5,1fr); gap:0;
+    margin-top:10px; border:1px solid var(--steel-line); border-radius:6px; overflow:hidden;
+}
+.process-step{
+    padding:28px 18px; border-right:1px solid var(--steel-line); position:relative;
+    background:var(--white);
+}
+.process-step:last-child{ border-right:none; background:var(--ink); color:var(--white); }
+.process-step .num{ font-family:var(--font-mono); font-size:13px; color:var(--amber-dark); font-weight:600; }
+.process-step:last-child .num{ color:var(--amber); }
+.process-step h4{ font-size:15px; font-weight:700; margin-top:10px; word-break:keep-all; }
+.process-step p{ font-size:12.5px; color:var(--steel); margin-top:6px; word-break:keep-all; line-height:1.6; }
+.process-step:last-child p{ color:#B7BBB2; }
+.process-note{
+    margin-top:24px; font-size:14px; color:var(--steel); word-break:keep-all; max-width:720px;
+}
+
+/* ===================================================================
+   5. 제품 카드 (등급별 용도 태깅)
+=================================================================== */
+.grade-cards{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:8px; }
+.grade-card{
+    background:var(--white); border:1px solid var(--steel-line); border-radius:8px;
+    padding:32px; position:relative; display:flex; flex-direction:column;
+}
+.grade-card.pro{ border-top:4px solid var(--amber); }
+.grade-card.eco{ border-top:4px solid var(--steel); }
+.grade-badge{
+    font-family:var(--font-mono); font-size:12px; font-weight:600;
+    background:var(--green-bg); color:var(--green); padding:5px 10px; border-radius:4px;
+    display:inline-block; margin-bottom:14px; width:fit-content;
+}
+.grade-card h3{ font-size:22px; font-weight:800; color:var(--ink); }
+.grade-card .mesh{ font-family:var(--font-mono); font-size:14px; color:var(--amber-dark); font-weight:600; margin-top:4px; }
+.grade-card .desc{ font-size:14.5px; color:var(--steel); margin-top:14px; word-break:keep-all; line-height:1.7; }
+.spec-mini{ list-style:none; margin-top:18px; padding-top:18px; border-top:1px solid var(--steel-line); }
+.spec-mini li{ font-size:13.5px; color:var(--ink-soft); margin-bottom:8px; display:flex; gap:8px; }
+.spec-mini li b{ color:var(--steel); font-weight:600; min-width:64px; }
+
+.tag-label{ font-size:13px; font-weight:700; color:var(--ink); margin-top:20px; margin-bottom:10px; }
+.tags{ display:flex; flex-wrap:wrap; gap:8px; }
+.tag{
+    font-size:12.5px; font-family:var(--font-mono); color:var(--green); background:var(--green-bg);
+    padding:5px 10px; border-radius:4px; white-space:nowrap;
+}
+.grade-card .btn{ margin-top:24px; justify-content:center; }
+.grade-card.pro .btn{ background:var(--amber); color:var(--white); }
+.grade-card.eco .btn{ background:var(--ink); color:var(--white); }
+
+/* ===================================================================
+   6. 스펙 비교 테이블
+=================================================================== */
+.spec-table-wrapper{ overflow-x:auto; margin-top:56px; }
+.spec-table{ width:100%; min-width:680px; border-collapse:collapse; background:var(--white); }
+.spec-table th,.spec-table td{ border:1px solid var(--steel-line); padding:16px 14px; font-size:14.5px; vertical-align:middle; }
+.spec-table th{ background:var(--ink); color:var(--white); font-weight:700; font-size:14px; text-align:center; }
+.spec-table td:first-child{ font-weight:700; color:var(--ink-soft); background:var(--paper); font-size:13.5px; white-space:nowrap; }
+.spec-table td{ color:var(--ink-soft); }
+
+/* ===================================================================
+   7. 매입 배너 / 열분해 원료공급 (서로 다른 방향의 거래 — 색으로 구분)
+=================================================================== */
+.deal-banner{ border-radius:8px; padding:36px; margin-bottom:28px; }
+.deal-banner .kicker{ font-family:var(--font-mono); font-size:12.5px; font-weight:700; letter-spacing:.04em; }
+.deal-banner h3{ font-size:20px; font-weight:800; margin-top:8px; }
+.deal-banner p{ font-size:14.5px; margin-top:10px; word-break:keep-all; line-height:1.75; max-width:680px; }
+.deal-banner .btn{ margin-top:18px; }
+
+.deal-banner.buy{ background:#FBF3E7; border:1px solid #E9CFA0; }
+.deal-banner.buy .kicker{ color:#9A6A1F; }
+.deal-banner.buy h3{ color:#7A5115; }
+.deal-banner.buy p{ color:#6E5A38; }
+.deal-banner.buy .btn{ background:#9A6A1F; color:var(--white); }
+
+.deal-banner.sell{ background:var(--ink); border:1px solid #3A413B; }
+.deal-banner.sell .kicker{ color:var(--amber); }
+.deal-banner.sell h3{ color:var(--white); }
+.deal-banner.sell p{ color:#B7BBB2; }
+.deal-banner.sell .btn{ background:var(--amber); color:var(--white); }
+
+/* ===================================================================
+   8. 연락처
+=================================================================== */
+.contact{ background:var(--white); border:1px solid var(--steel-line); border-radius:8px; padding:56px 6%; text-align:center; }
+.contact h2{ margin-bottom:12px; }
+.contact > p{ color:var(--steel); font-size:15px; }
+.contact-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:36px; }
+.contact-item{ border:1px solid var(--steel-line); border-radius:6px; padding:24px 16px; }
+.contact-item .label{ font-family:var(--font-mono); font-size:12px; color:var(--steel); text-transform:uppercase; letter-spacing:.06em; }
+.contact-item .value{ font-size:16px; font-weight:700; color:var(--ink); margin-top:8px; word-break:keep-all; }
+.contact-item a.value:hover{ color:var(--amber-dark); }
+
+/* ===================================================================
+   9. 모바일 하단 고정 통화 바 (전환율 핵심)
+=================================================================== */
+.mobile-call-bar{
+    display:none; position:fixed; bottom:0; left:0; right:0; z-index:1000;
+    background:var(--ink); padding:12px 6%;
+    box-shadow:0 -4px 16px rgba(0,0,0,.15);
+}
+.mobile-call-bar a{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    background:var(--amber); color:var(--white); font-weight:700; font-size:15px;
+    padding:14px; border-radius:6px;
+}
+
+footer{ text-align:center; padding:32px 6% 100px; font-size:12.5px; color:var(--steel); }
+
+/* ===================================================================
+   반응형
+=================================================================== */
+@media (max-width:860px){
+    .grade-cards{ grid-template-columns:1fr; }
+    .process-flow{ grid-template-columns:1fr; }
+    .process-step{ border-right:none; border-bottom:1px solid var(--steel-line); }
+    .process-step:last-child{ border-bottom:none; }
+    .contact-grid{ grid-template-columns:1fr; }
+}
+@media (max-width:640px){
+    nav{ display:none; }
+    .nav-menu-btn{ display:block; }
+    .hero h1{ font-size:30px; }
+    section{ padding:64px 6%; }
+    h2{ font-size:24px; }
+    .mobile-call-bar{ display:block; }
+    body{ padding-bottom:70px; }
+    .trust-strip{ gap:22px; }
+}
+</style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">성원산업</div>
-        <nav>
-            <a href="#about">회사소개</a>
-            <a href="#product">제품소개</a>
-            <a href="#contact">오시는길 및 문의</a>
-        </nav>
-    </header>
+<header>
+    <div class="logo">성원<span>산업</span></div>
+    <nav>
+        <a href="#about">회사소개</a>
+        <a href="#process">생산공정</a>
+        <a href="#product">제품안내</a>
+        <a href="#pyrolysis">열분해 원료</a>
+        <a href="#contact" class="nav-cta">문의하기</a>
+    </nav>
+    <button class="nav-menu-btn" aria-label="메뉴">☰</button>
+</header>
 
-    <section class="hero">
-        <h1>지속 가능한 내일을 위한 플라스틱 리사이클링</h1>
-        <p>2001년부터 축적된 압출 공정 노하우로 최상의 재생 플라스틱 펠릿을 제공합니다.</p>
-    </section>
+<section class="hero">
+    <div class="hero-inner">
+        <span class="eyebrow">SINCE 2001 · 경기 화성</span>
+        <h1>25년, 같은 방식으로<br>압출해온 재생 LDPE 펠릿</h1>
+        <p class="lead">이중 압출·이중 필터링 공정으로 불량률을 최소화합니다. 현재 농업용 호스 제조사에 프리미엄급(SW-PRO) 원료를 납품 중이며, 귀사 배합 비율에 맞춘 무상 샘플을 보내드립니다.</p>
+        <div class="hero-ctas">
+            <a class="btn btn-primary" href="tel:010-2212-5129">📞 지금 전화 문의</a>
+            <a class="btn btn-outline" href="#product">제품/스펙 보기</a>
+        </div>
+        <div class="trust-strip">
+            <div class="trust-item"><b>25년</b>압출 현장 노하우</div>
+            <div class="trust-item"><b>2단</b>압출·이중 필터링 공정</div>
+            <div class="trust-item"><b>120목</b>프리미엄급 최고 정밀도</div>
+        </div>
+    </div>
+</section>
 
-    <section id="about">
-        <h2>회사 소개</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
-            성원산업은 2001년 설립 이래, 버려지는 플라스틱 자원에 새로운 생명을 불어넣어 왔습니다. <br>
-            고도의 압출 공정 기술과 엄격한 품질 관리를 바탕으로 산업 전반에 필수적인 재생 원료를 생산하여, 자원 순환 경제에 기여하고 있습니다.
-        </p>
-    </section>
+<section id="about">
+    <div class="section-head">
+        <span class="eyebrow">About</span>
+        <h2>기본에 충실한 일관성</h2>
+    </div>
+    <p class="about-text">
+        성원산업은 <strong>'기본에 충실한 일관성'</strong>을 최우선 가치로 삼습니다.<br><br>
+        25년간 현장에서 쌓아온 원재료 선별 안목과 체계적인 공정을 바탕으로 불량률을 최소화합니다. 단기적인 이익보다는 합리적인 단가 운영과 철저한 품질 관리를 통해 믿고 맡길 수 있는 든든한 B2B 파트너로 동반 성장하고 싶습니다.
+    </p>
+    <div class="location-badge">📍 청북 IC 인근 양감가구단지 내 위치</div>
+</section>
 
-    <section id="product">
-        <h2>생산 품목</h2>
-        <div class="products">
-            <div class="product-card">
-                <!-- 이미지 태그: 실제 제품 사진 경로로 변경 필요 -->
-                <div style="background:#ddd; height:200px; margin-bottom:15px; line-height:200px;">[LDPE 펠릿 사진]</div>
-                <h3>LDPE (저밀도 폴리에틸렌)</h3>
-                <p>우수한 유연성과 가공성을 자랑하는 고품질 재생 LDPE 펠릿입니다.</p>
+<section id="process" class="process">
+    <div class="section-head">
+        <span class="eyebrow">Process</span>
+        <h2>2단 압출 공정의 기술적 강점</h2>
+        <p>일반적인 싱글 압출기와 달리, 두 번의 독립된 공정을 거쳐 미세 불순물과 가스를 걸러냅니다.</p>
+    </div>
+    <div class="process-flow">
+        <div class="process-step">
+            <span class="num">01</span>
+            <h4>원료 선별</h4>
+            <p>본드·테이프 등 이물질을 등급별 기준에 따라 선별</p>
+        </div>
+        <div class="process-step">
+            <span class="num">02</span>
+            <h4>1차 압출·용융</h4>
+            <p>원료를 고르게 용융하며 1차 이물질을 걸러냄</p>
+        </div>
+        <div class="process-step">
+            <span class="num">03</span>
+            <h4>필터링</h4>
+            <p>120목/80목 스크린 메쉬로 2차 정밀 여과</p>
+        </div>
+        <div class="process-step">
+            <span class="num">04</span>
+            <h4>가스 벤팅</h4>
+            <p>수분·가스를 배출해 펠릿 내부 기포 발생 차단</p>
+        </div>
+        <div class="process-step">
+            <span class="num">05</span>
+            <h4>2차 압출·펠릿화</h4>
+            <p>밀도를 높여 최종 성형물의 강도를 보장</p>
+        </div>
+    </div>
+    <p class="process-note">이 공정 덕분에 프리미엄급(SW-PRO)은 핀홀 없이 두껍게 압출해야 하는 필름류까지 대응 가능합니다.</p>
+</section>
+
+<section id="product">
+    <div class="section-head">
+        <span class="eyebrow">Product</span>
+        <h2>제품 및 생산 스펙 안내</h2>
+        <p>귀사에서 이미 생산 중인 제품과 가까운 등급을 확인하고, 소량 샘플로 먼저 테스트해보세요.</p>
+    </div>
+
+    <div class="grade-cards">
+        <!-- 프리미엄급 -->
+        <div class="grade-card pro">
+            <span class="grade-badge">현재 농업용 호스 제조사 납품 중</span>
+            <h3>SW-PRO · 프리미엄급</h3>
+            <div class="mesh">120목 필터링 (4장)</div>
+            <p class="desc">본드·테이프를 완벽 제거한 최상급 필름 원단 기반. 유연성과 정밀도가 필요한 압출 제품군에 적합합니다.</p>
+
+            <ul class="spec-mini">
+                <li><b>원재료</b>기저귀 포장 인쇄 파지, 생지 등 최상급 필름 원단</li>
+                <li><b>색상</b>백색 / 혼합</li>
+                <li><b>포장</b>500kg / 톤백</li>
+            </ul>
+
+            <div class="tag-label">이런 용도에 사용됩니다</div>
+            <div class="tags">
+                <span class="tag">#농업용호스</span>
+                <span class="tag">#비닐하우스필름</span>
+                <span class="tag">#멀칭필름</span>
+                <span class="tag">#스트레치랩</span>
+                <span class="tag">#점적관수튜브</span>
+                <span class="tag">#두꺼운바닥덮개필름</span>
             </div>
-            <div class="product-card">
-                <div style="background:#ddd; height:200px; margin-bottom:15px; line-height:200px;">[PP 펠릿 사진]</div>
-                <h3>PP (폴리프로필렌)</h3>
-                <p>내열성과 내구성이 뛰어난 산업용 재생 PP 펠릿입니다.</p>
+
+            <a class="btn" href="mailto:sungwon4644@hanmail.net?subject=SW-PRO%20샘플%20요청&body=업종%3A%0A필요%20물량%2F주기%3A%0A연락처%3A">SW-PRO 샘플 요청하기</a>
+        </div>
+
+        <!-- 일반형 -->
+        <div class="grade-card eco">
+            <span class="grade-badge" style="background:#EDEBE4;color:var(--steel);">단가 절감형 · 대량 안정 공급</span>
+            <h3>SW-ECO · 일반형</h3>
+            <div class="mesh">80목 필터링 (2장)</div>
+            <p class="desc">표면 품질보다 강도·비용 효율이 중요한 압출/사출 제품군에 적합한 범용 등급입니다.</p>
+
+            <ul class="spec-mini">
+                <li><b>원재료</b>테이프 포함 일반 필름, 범용 파지 혼합</li>
+                <li><b>색상</b>백색 / 혼합</li>
+                <li><b>포장</b>500kg / 톤백</li>
+            </ul>
+
+            <div class="tag-label">이런 용도에 사용됩니다</div>
+            <div class="tags">
+                <span class="tag">#사출성형품</span>
+                <span class="tag">#건축용보양비닐</span>
+                <span class="tag">#마대(톤백)베이스</span>
+                <span class="tag">#플라스틱파렛트</span>
+                <span class="tag">#코일매트</span>
+                <span class="tag">#케이블보호관</span>
+            </div>
+
+            <a class="btn" href="mailto:sungwon4644@hanmail.net?subject=SW-ECO%20샘플%20요청&body=업종%3A%0A필요%20물량%2F주기%3A%0A연락처%3A">SW-ECO 샘플 요청하기</a>
+        </div>
+    </div>
+
+    <div class="spec-table-wrapper">
+        <table class="spec-table">
+            <thead>
+                <tr>
+                    <th>항목</th>
+                    <th>SW-PRO (프리미엄급)</th>
+                    <th>SW-ECO (일반형)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>원재료</td>
+                    <td>본드/테이프 완벽 제거, 최상급 필름 원단</td>
+                    <td>테이프 포함 일반 필름, 범용 파지 혼합</td>
+                </tr>
+                <tr>
+                    <td>필터링</td>
+                    <td>120목 (4장)</td>
+                    <td>80목 (2장)</td>
+                </tr>
+                <tr>
+                    <td>색상</td>
+                    <td>백색 / 혼합</td>
+                    <td>백색 / 혼합</td>
+                </tr>
+                <tr>
+                    <td>주요 용도</td>
+                    <td>농업용 호스, 필름, 스트레치랩</td>
+                    <td>사출성형품, 건축자재, 파렛트</td>
+                </tr>
+                <tr>
+                    <td>포장 단위</td>
+                    <td>500kg / 포대 (톤백)</td>
+                    <td>500kg / 포대 (톤백)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="deals">
+    <div class="section-head">
+        <span class="eyebrow">Materials</span>
+        <h2>원료 매입 · 열분해 원료 공급</h2>
+        <p>성원산업은 원료를 사들이기도, 부산물을 공급하기도 합니다 — 방향을 헷갈리지 않게 구분해두었습니다.</p>
+    </div>
+
+    <div class="deal-banner buy">
+        <span class="kicker">WE BUY — 원료 매입</span>
+        <h3>♻️ LDPE 스크랩 상시 사입</h3>
+        <p>고품질 펠릿 생산을 위한 양질의 LDPE 스크랩(인쇄 파지, 생지 등)을 상시 매입하고 있습니다. 안정적이고 장기적인 거래를 희망하시는 공급처의 연락 바랍니다.</p>
+        <a class="btn" href="mailto:sungwon4644@hanmail.net?subject=LDPE%20스크랩%20공급%20문의">스크랩 공급 문의</a>
+    </div>
+
+    <div class="deal-banner sell" id="pyrolysis">
+        <span class="kicker">WE SUPPLY — 열분해 피드스톡</span>
+        <h3>🔥 열분해(파이롤리시스) 원료 공급</h3>
+        <p>펠릿 생산 과정에서 발생하는 저급 스크랩(전체 물량의 10~20%)을 열분해 공정용 피드스톡으로 안정적으로 공급합니다. 물량·단가 협의 가능하며 실물 샘플 제공해드립니다.</p>
+        <a class="btn" href="mailto:sungwon4644@hanmail.net?subject=열분해%20원료%20공급%20문의">열분해 원료 문의</a>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact">
+        <h2>문의 및 오시는 길</h2>
+        <p>원재료 수급, 펠릿 납품, 샘플 요청 모두 아래로 편하게 연락 주세요.</p>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="label">Tel</div>
+                <a class="value" href="tel:010-2212-5129">010-2212-5129</a>
+            </div>
+            <div class="contact-item">
+                <div class="label">Email</div>
+                <a class="value" href="mailto:sungwon4644@hanmail.net">sungwon4644@hanmail.net</a>
+            </div>
+            <div class="contact-item">
+                <div class="label">Address</div>
+                <span class="value">경기 화성시 양감면<br>은행나무로 170번길 60</span>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact" class="contact">
-        <h2>문의 및 오시는 길</h2>
-        <p>제품 단가 및 대량 납품 문의는 아래 연락처로 부탁드립니다.</p>
-        <p><strong>공장 위치:</strong> 경기도 평택시 안중읍 [상세 주소 입력]</p>
-        <p><strong>전화번호:</strong> 031-XXX-XXXX (또는 직통번호)</p>
-        <p><strong>이메일:</strong> example@sungwonind.co.kr</p>
-    </section>
+<footer>© 2026 성원산업. 경기도 화성시 양감면 은행나무로 170번길 60</footer>
+
+<!-- 모바일 하단 고정 통화 버튼 -->
+<div class="mobile-call-bar">
+    <a href="tel:010-2212-5129">📞 전화로 바로 문의하기</a>
+</div>
+
+<script>
+// 모바일 메뉴 토글 (경량, 의존성 없음)
+document.querySelector('.nav-menu-btn')?.addEventListener('click', () => {
+    const nav = document.querySelector('nav');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    nav.style.cssText += 'flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--paper);padding:20px 6%;border-bottom:1px solid var(--steel-line);gap:16px;';
+});
+</script>
 
 </body>
 </html>
