@@ -11,6 +11,7 @@
 <meta property="og:title" content="성원산업 | 재생 플라스틱 펠릿 제조">
 <meta property="og:description" content="재생 LDPE 펠릿. 농업용 호스·필름부터 사출성형·건축자재까지.">
 <meta property="og:url" content="https://sungwonind.co.kr/">
+<meta property="og:image" content="https://sungwonind.co.kr/images/facility-line.jpg">
 <meta property="og:locale" content="ko_KR">
 
 <title>성원산업 | 재생 LDPE 펠릿 제조 · 스크랩 매입</title>
@@ -217,6 +218,16 @@ nav a:hover{ color:var(--amber-dark); }
 .process-note{
     margin-top:24px; font-size:14px; color:var(--steel); word-break:keep-all; max-width:720px;
 }
+.process-photo{
+    margin-top:28px; border-radius:8px; overflow:hidden; border:1px solid var(--steel-line);
+    position:relative;
+}
+.process-photo img{ width:100%; aspect-ratio:16/9; object-fit:cover; }
+.process-photo .caption{
+    position:absolute; left:0; bottom:0; right:0;
+    background:linear-gradient(transparent, rgba(29,36,32,.75));
+    color:var(--white); font-size:13px; padding:28px 16px 12px;
+}
 
 /* ===================================================================
    5. 제품 카드 (등급별 용도 태깅)
@@ -228,6 +239,10 @@ nav a:hover{ color:var(--amber-dark); }
 }
 .grade-card.pro{ border-top:4px solid var(--amber); }
 .grade-card.eco{ border-top:4px solid var(--steel); }
+.card-photo{
+    margin:-32px -32px 20px; border-radius:8px 8px 0 0; overflow:hidden;
+}
+.card-photo img{ width:100%; aspect-ratio:4/3; object-fit:cover; }
 .grade-badge{
     font-family:var(--font-mono); font-size:12px; font-weight:600;
     background:var(--green-bg); color:var(--green); padding:5px 10px; border-radius:4px;
@@ -408,6 +423,10 @@ footer{ text-align:center; padding:32px 6% 100px; font-size:12.5px; color:var(--
         </div>
     </div>
 
+    <div class="process-photo">
+        <img src="images/facility-line.jpg" alt="성원산업 재생 LDPE 압출 생산 라인 현장 사진" loading="lazy">
+        <div class="caption">경기도 화성 공장 내 실제 압출 생산 라인</div>
+    </div>
 </section>
 
 <section id="product">
@@ -420,6 +439,9 @@ footer{ text-align:center; padding:32px 6% 100px; font-size:12.5px; color:var(--
     <div class="grade-cards">
         <!-- 프리미엄급 -->
         <div class="grade-card pro">
+            <div class="card-photo">
+                <img src="images/pellet-sw-pro-sample.jpg" alt="SW-PRO 프리미엄급 재생 LDPE 펠릿 샘플 사진" loading="lazy">
+            </div>
             <span class="grade-badge">다수 농업용 호스 제조사 납품 중</span>
             <h3>SW-PRO · 프리미엄급</h3>
             <div class="mesh">120목(mesh) 필터링</div>
@@ -445,6 +467,9 @@ footer{ text-align:center; padding:32px 6% 100px; font-size:12.5px; color:var(--
 
         <!-- 일반형 -->
         <div class="grade-card eco">
+            <div class="card-photo">
+                <img src="images/pellet-sw-eco-sample.jpg" alt="SW-ECO 일반형 재생 LDPE 펠릿 샘플 사진" loading="lazy">
+            </div>
             <span class="grade-badge" style="background:#EDEBE4;color:var(--steel);">단가 절감형 · 대량 안정 공급</span>
             <h3>SW-ECO · 일반형</h3>
             <div class="mesh">40목(mesh) 필터링</div>
